@@ -12,4 +12,5 @@ Spring Batch based Scheduled, Automatic Database Backup Solution
 ![image](https://github.com/user-attachments/assets/713d4103-210f-442c-8f64-98f82f88feb1)
 
 ### Final Goal
-![image](https://github.com/user-attachments/assets/2cf5b58b-9c76-4f21-8b50-f1c2d1f1b838)
+![image](https://github.com/user-attachments/assets/3e2a7507-394b-475b-b033-241e2f56b01f)
+
