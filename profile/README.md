@@ -2,7 +2,7 @@
 Spring Batch based Scheduled, Automatic Database Backup Solution
 
 ## Dev Environment Scenario
-![image](https://github.com/user-attachments/assets/1e29d81a-35db-4c29-8a9d-ccb6a430dac7)
+![image](https://github.com/user-attachments/assets/e0aee143-11c9-4f95-88fc-a37ffc015de4)
 
 ## Openstack Infrastructure
 ### K8s Cluster Architecture
@@ -12,5 +12,4 @@ Spring Batch based Scheduled, Automatic Database Backup Solution
 ![image](https://github.com/user-attachments/assets/713d4103-210f-442c-8f64-98f82f88feb1)
 
 ### Final Goal
-![image](https://github.com/user-attachments/assets/3e2a7507-394b-475b-b033-241e2f56b01f)
-
+![image](https://github.com/user-attachments/assets/071dad04-b8e6-41e9-a8cb-a300742bd8e8)
