@@ -1,5 +1,5 @@
 ## Ravo
-Spring Batch based Scheduled, Automatic Database Backup Solution
+Spring Batch based Opensource Cloud Database Backup Solution
 
 ## Dev Environment Scenario
 ![image](https://github.com/user-attachments/assets/e0aee143-11c9-4f95-88fc-a37ffc015de4)
