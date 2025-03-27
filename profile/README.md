@@ -1,5 +1,5 @@
 ## Ravo
-Spring Batch based Opensource Cloud Database Backup Solution
+Robust And Versatile Open-source spring batch based backup solution
 
 | Dev Environment Scenario | Final Goal |
 |----------|----------|
