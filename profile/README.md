@@ -1,6 +1,6 @@
 ### **RAVO: Robust And Versatile Operation for RDB**
 
-금융권과 같이 비즈니스 연속성이 필수적인 K-PaaS 환경에서, RDB 서비스의 가용성을 극대화하고 데이터 정합성을 보장하는 자동화 솔루션입니다.
+금융권과 같이 비즈니스 연속성이 필수적인 K-PaaS Kubernetes 환경에서, RDB 서비스의 가용성을 극대화하고 데이터 정합성을 보장하는 자동화 솔루션입니다.
 
 ### **Key Features**
 
