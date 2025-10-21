@@ -4,14 +4,18 @@
 
 ### **Key Features**
 
-* **실시간 데이터 동기화 및 백업**
-    * **CDC 기반 복제**: `Debezium`과 `Kafka`를 활용하여 Active DB의 모든 데이터 변경 사항을 Standby DB로 실시간 반영합니다.
-    * **안정성 강화**: 정기적인 Warm Backup형태로 소산 백업을 진행해 데이터 보존 신뢰도를 높입니다.
+- Live Sync
+  - Debezium과 Kafka 기반의 CDC 기술을 활용하여 Active DB의 변경 내역을 Standby DB로 실시간 복제합니다.
+  - 이를 통해 장애 발생 시점의 RPO을 최소화하고 두 DB 간의 Live Sync를 보장합니다.
 
-* **자동 장애 감지 및 복구**
-    * **즉시 감지**: 자체 구현한 `Failover Watcher`가 Active DB의 장애를 신속하게 감지합니다.
-    * **다운타임 최소화**: 장애 발생 시 자동으로 Standby DB로 서비스를 전환하여 서비스 중단을 최소화합니다.
+- Auto-Failover
+  - 자체 구현한 RAVO-AGENT가 Active DB의 장애를 즉각적으로 감지하여 서비스 트래픽을 Standby DB로 자동 전환합니다.
+  - Kubernetes Service 리소스를 자동으로 제어하여 RTO를 최소화합니다.
 
-* **데이터 정합성 보장**
-    * **변경 이력 추적**: `GTID`가 적용된 Standby DB의 `binlog`를 통해 Failover 중 발생한 모든 데이터 변경분을 추적합니다.
-    * **역방향 동기화**: 기존 Active DB 복구 시, 추적된 변경분을 다시 동기화하여 데이터의 정합성을 보장한 후 Active DB로 Recover 됩니다.
+- Auto-Recover
+  - 기존 Active DB가 복구되면, 장애 동안 Standby DB에 쌓인 변경 내역을 GTID 기반으로 추적하여 역방향 동기화를 수행합니다.
+  - 데이터 정합성을 보장한 후, 서비스 트래픽을 다시 Active DB로 자동 복구시킵니다.
+
+- Dispersion Backup
+  - Active DB가 위치한 클러스터와 물리적/논리적으로 분리된 위치에 정기적으로 데이터 덤프 백업을 수행합니다.
+  - IDC 전체 재해와 같은 상황에서도 데이터를 안전하게 보존하고 복구할 수 있습니다.
