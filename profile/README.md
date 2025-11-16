@@ -1,6 +1,6 @@
 ### **RAVO: Robust And Versatile Operation for RDB**
 
- RAVO는 금융권과 같이 비즈니스 연속성이 필수적인 K-PaaS 기반 Kubernetes 클러스터 환경에서, RDB의 가용성을 극대화하고 데이터 정합성을 보장하는 자동화 DB Application DR 솔루션입니다.
+R&D 서비스 안정성 및 가용성 혁신을 위한 자동화된 DB Distaster Recovery 솔루션
 
 ### **Key Features**
 
